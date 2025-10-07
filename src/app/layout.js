@@ -22,10 +22,10 @@ export default function RootLayout({children}) {
     return (
         <html lang="en">
         <body
-            className="bg-tolkien-bg text-tolkien-primary font-serif antialiased"
+            className="bg-tolkien-bg text-tolkien-primary font-serif antialiased flex flex-col min-h-screen"
         >
         <Header/>
-        <main>{children}</main>
+        <main className="flex-grow">{children}</main>
         <Footer/>
         </body>
         </html>

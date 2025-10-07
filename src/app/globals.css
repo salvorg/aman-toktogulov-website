@@ -1,14 +1,15 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f3f2e1;
+  --background: #F7F7F1;
   --foreground: #383E3C;
 }
 
 @theme inline {
   --color-white-chalk: #F7F7F1;
-  --color-tolkien-primary: #4a4944;
+  --color-tolkien-primary: #666666;
   --color-tolkien-accent: #a1885f;
+  --color-gold: #9F8D60;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: "PT Serif", serif;

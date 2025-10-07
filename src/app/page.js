@@ -1,13 +1,32 @@
 "use client";
 
+import Image from "next/image";
+
 export default function HomePage() {
     return (
-        <section className="max-w-5xl mx-auto px-6 py-16 text-center">
-            <h2 className="text-4xl font-light tracking-wide mb-4">Добро пожаловать</h2>
-            <p className="text-lg text-[#3b3a38] leading-relaxed">
-                Этот сайт создан в духе эстетики мира Толкиена — с вниманием к деталям,
-                спокойным дизайном и гармоничными цветами.
-            </p>
+        <section
+            className="relative w-full h-[45vh] md:h-[55vh] lg:h-[60vh] flex items-center justify-center overflow-hidden">
+            <Image
+                src="/aman-tok-portrait-wide.png"
+                alt="Аман Токтогулов"
+                fill
+                priority
+                className="object-cover"
+            />
+
+            <div className="absolute inset-0 bg-gradient-to-b from-[#f3f2e1]/70 via-transparent to-[#f3f2e1]/80"></div>
+
+            <div className="relative z-10 w-full flex justify-end text-center px-46">
+                <p className="w-[40vh] text-lg md:text-3xl text-white-chalk/80 font-serif italic whitespace-pre-line">
+                    {`«Өзүңдү изде!
+                    Сен кимсиң, бу дүйнөдө?
+                    Кеч эмес али дагы.
+                    Сен, досум, өзүңдү тап!
+                    Тойгузба сөзүң, менен.
+                    Көргөз иш, бер ибарат!»`}
+                </p>
+            </div>
+
         </section>
     );
 }
