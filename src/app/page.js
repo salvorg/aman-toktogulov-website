@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Container from "@/components/Container";
+import Link from "next/link";
 
 export default function HomePage() {
     return (
@@ -30,85 +31,122 @@ export default function HomePage() {
                     </p>
                 </div>
             </section>
-            <section>
+            <section className="py-16 bg-[#f3f2e1]">
                 <Container>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores beatae consectetur
-                deserunt doloremque dolores doloribus earum eos eum facilis, fuga maiores molestiae mollitia officia
-                quam quidem quo quos reiciendis rem reprehenderit sed sequi vel voluptates. Ad aperiam eligendi fuga
-                ipsum, nostrum nulla odio provident qui quibusdam quod similique sint temporibus voluptas. Fugiat
-                laudantium mollitia vel. Aut, beatae deserunt hic in libero minus molestiae necessitatibus odio qui
-                repellat voluptatem voluptates. Amet, aperiam at autem et impedit libero minima quia tempora tenetur
-                velit vitae voluptates. Aperiam asperiores doloribus, eligendi esse in ipsa nesciunt quae quaerat qui
-                sed sunt ullam. Ab aliquam amet architecto asperiores assumenda at beatae, cumque dolorem eos excepturi
-                fugiat id modi molestiae nam, omnis quas, qui quos tenetur unde veritatis. Atque culpa delectus eius
-                harum inventore laboriosam, natus, necessitatibus nulla obcaecati possimus praesentium quis sequi?
-                Aperiam eaque eligendi explicabo hic iusto libero maxime pariatur tempora veniam vero. Aut consequatur
-                consequuntur dignissimos dolor enim, eos eveniet expedita fuga nihil nobis perferendis quos rem
-                similique tempora ut, veritatis voluptate. Aliquam cupiditate minus sunt? Assumenda consequuntur facere
-                illo, officia quos reiciendis suscipit. Aliquid asperiores consectetur consequuntur ipsum pariatur quam
-                quibusdam rem, ullam. Cum cumque debitis distinctio eaque, excepturi fuga laboriosam nihil numquam
-                perferendis quas repudiandae rerum veritatis? Commodi culpa cum dignissimos ducimus eligendi
-                exercitationem expedita facilis totam, velit? At doloremque doloribus dolorum explicabo facere itaque
-                nemo nostrum tenetur vitae? Alias aliquam atque blanditiis dicta eaque eligendi eos, est eum fugiat
-                itaque magnam modi mollitia provident quia tempora ullam velit! Accusamus adipisci asperiores assumenda
-                atque doloremque ducimus, esse impedit iste iusto quasi, quibusdam reiciendis, repellendus rerum totam
-                veniam vitae voluptas? Aliquid amet consequatur eum, id minima praesentium quia repudiandae similique
-                tempora voluptate. A accusantium aspernatur atque, corporis ea ipsum itaque placeat quam sint totam
-                veritatis voluptate voluptatibus? Cumque inventore nemo quas voluptate voluptates. A consequuntur
-                debitis distinctio eos error facilis impedit, ipsam ipsum, magni minus modi nam nihil porro provident
-                quod quos saepe sapiente sint sit ut! Aliquam aut consequatur ducimus, illo maxime minima mollitia
-                officiis, provident quidem quisquam, quod velit! At cumque, inventore numquam rem saepe sint suscipit
-                velit. Aperiam facere laborum numquam ullam! A impedit inventore iure labore laudantium nam natus, nemo
-                neque odit pariatur quis quo quod sit. A animi atque aut cum, eius, fuga necessitatibus nihil nobis
-                nulla omnis pariatur possimus quam quisquam quod suscipit tempore ullam. Cupiditate deserunt doloribus
-                eveniet ipsa saepe velit. Doloremque earum ex fuga illo, laboriosam libero magni praesentium! Amet
-                aperiam dolore eius, eligendi esse iusto minus nostrum! Cumque delectus dolorum ducimus eaque eligendi
-                fugit id inventore itaque iusto magnam nesciunt, non nostrum quaerat rerum saepe sapiente soluta
-                temporibus, totam unde voluptatibus. Assumenda at aut consequuntur distinctio est exercitationem hic
-                itaque modi mollitia nesciunt odit perferendis porro, quia quibusdam reiciendis tenetur ullam, ut vitae
-                voluptas voluptatum? Corporis hic neque tenetur? Aspernatur at commodi consequatur, dignissimos
-                excepturi facere libero molestiae odio quaerat quia, quidem reiciendis tempora tempore unde veritatis.
-                Amet aspernatur assumenda commodi consequuntur culpa dignissimos dolor dolorum ea, eos explicabo impedit
-                ipsa, minus nam nobis optio porro possimus quae quo quos recusandae tempore veniam, voluptatum? Beatae
-                cum, deserunt est exercitationem id iste laborum placeat quasi recusandae velit. Accusantium laboriosam
-                qui quod reprehenderit? A cupiditate dolorem error est illo ipsam, ipsum magni quaerat similique
-                tenetur. Ab commodi culpa eveniet facilis necessitatibus nostrum quam. Aliquam aperiam aut blanditiis
-                dolorem, eligendi enim harum id incidunt iure minima placeat ratione recusandae sapiente sequi voluptas.
-                Delectus illo iste neque nihil similique. Aut cum dignissimos distinctio ducimus ea eaque earum, error
-                et eum iste, libero magnam minima, molestiae non odit quasi quod repudiandae sapiente sint soluta totam
-                vel voluptas voluptate? Animi est fugit illum impedit labore sint ullam voluptas. Adipisci aspernatur
-                commodi dicta doloremque eveniet libero magni minus non nostrum, reprehenderit, totam unde ut vitae?
-                Accusantium aut eum exercitationem magni nesciunt officia quaerat sunt ullam. Cupiditate, doloremque
-                enim explicabo facere hic iste itaque molestias, nam, necessitatibus neque nobis odio officia quam
-                quibusdam quidem ratione repellat repudiandae saepe sint ut vel vero voluptates. Aspernatur, dolores
-                eius eum excepturi illum officiis quis quo. Aliquid asperiores dignissimos eius eos odit quia
-                temporibus? Esse, quo, veritatis. A accusantium amet animi asperiores assumenda at, atque deserunt ea
-                explicabo, in, incidunt ipsum iure laudantium mollitia nesciunt rerum totam. Accusamus assumenda
-                blanditiis cum delectus, dolorem eius enim fugiat in incidunt labore mollitia natus nesciunt nobis
-                nostrum odio optio praesentium quaerat quasi quibusdam quis rerum sint tempore temporibus totam unde
-                velit vitae voluptas. Nesciunt nobis omnis quidem recusandae rerum. Amet beatae distinctio laudantium
-                minima necessitatibus nemo quas vel? Asperiores deserunt quo sequi unde. Accusamus alias assumenda
-                fugit, impedit qui quibusdam repudiandae sit voluptas? Aperiam, architecto, dicta dolor doloremque
-                dolores eius esse fuga impedit incidunt ipsam labore necessitatibus perspiciatis quam suscipit ut veniam
-                voluptas? Eius, laborum suscipit. Ad assumenda consequatur ex facere nobis officiis perspiciatis
-                provident qui, quis rerum sapiente, soluta ullam vel voluptate voluptates. Adipisci alias, aliquam
-                debitis, esse expedita fugit illo, molestias obcaecati qui quis recusandae sequi vero voluptate?
-                Consequuntur, dolore labore molestias omnis quaerat quam quasi sit ut? Distinctio earum maiores nihil
-                odio perferendis totam. Accusamus amet aperiam architecto blanditiis cum earum eius facere fugit harum
-                id impedit ipsa ipsam, itaque iure, maiores molestiae neque nobis odio, pariatur placeat quae quas qui
-                quod repudiandae rerum sequi soluta tempore temporibus ullam vel velit veritatis voluptas voluptate!
-                Illo pariatur qui quod! Animi cumque dignissimos, eaque ex ipsam ipsum laudantium maxime quibusdam
-                reprehenderit vero! Aliquam ipsam molestiae nihil non. Cupiditate inventore ipsa natus nisi nobis
-                voluptatem! Aliquid asperiores cum cupiditate dignissimos est excepturi expedita facilis fuga harum
-                impedit libero magnam magni minima, minus necessitatibus nesciunt omnis quas quis quod recusandae rem
-                rerum sequi vel voluptates voluptatibus? Aliquid at aut culpa deserunt ducimus eaque eius eligendi
-                expedita fuga fugiat impedit incidunt iusto laborum natus non quia quibusdam quis ratione rem
-                repudiandae soluta, tempora velit! Autem consequatur ea est in, labore libero maiores molestiae nihil
-                nisi officia officiis quaerat qui quia quisquam saepe velit vero? Consequuntur ipsum libero maxime
-                mollitia voluptatem? Asperiores cupiditate dolores expedita, fuga impedit minima mollitia necessitatibus
-                rerum.
+                    <div className="grid md:grid-cols-2 gap-12 items-center">
+                        <Image
+                            src="/aman-tok-portrait.png"
+                            alt="Аман Токтогулов портрет"
+                            width={400}
+                            height={500}
+                            className="rounded-2xl shadow-lg object-cover"
+                        />
+                        <div>
+                            <h2 className="text-2xl font-serif text-tolkien-primary mb-4">
+                                Аман Токтогулов жөнүндө
+                            </h2>
+                            <p className="text-[#4a4944]/80 leading-relaxed mb-6">
+                                Кыргыз адабиятынын көрүнүктүү өкүлдөрүнүн бири, акын, жазуучу жана котормочу. Анын чыгармаларында адамдын ички дүйнөсү, жаратылышка болгон сүйүү жана руханий изденүү темалары терең чагылдырылган.
+                            </p>
+                            <Link
+                                href="/omur-bayany"
+                                className="inline-block px-6 py-3 bg-tolkien-primary text-white rounded-xl hover:bg-tolkien-accent transition"
+                            >
+                                Толук окуу →
+                            </Link>
+                        </div>
+                    </div>
                 </Container>
             </section>
+            <section className="py-20 bg-white-chalk border-t border-[#dcd7c9]/60">
+                <Container>
+                    <h2 className="text-3xl font-serif text-center mb-12 text-tolkien-primary">
+                        Рубрикалар
+                    </h2>
+
+                    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                        {[
+                            { href: "/yrlar", title: "Ырлар", desc: "Жандуу жана терең поэзиянын жыйнагы." },
+                            { href: "/proza", title: "Проза", desc: "Кыска жана узун прозалык чыгармалар." },
+                            { href: "/publitsistika", title: "Публицистика", desc: "Коом жана маданият тууралуу ой-пикирлер." },
+                            { href: "/kotormolor", title: "Котормолор", desc: "Дүйнөлүк адабияттан которулган чыгармалар." },
+                            { href: "/video", title: "Видео", desc: "Жандуу сүйлөмдөр жана маектер." },
+                            { href: "/photo", title: "Фотогалерея", desc: "Жашоодон, чыгармачылыктан элестер." },
+                        ].map(({ href, title, desc }) => (
+                            <Link
+                                key={href}
+                                href={href}
+                                className="block bg-[#faf8f0] rounded-2xl p-6 shadow-md hover:shadow-lg transition hover:-translate-y-1"
+                            >
+                                <h3 className="text-xl font-serif text-tolkien-primary mb-2">{title}</h3>
+                                <p className="text-[#4a4944]/80 text-sm leading-relaxed">{desc}</p>
+                            </Link>
+                        ))}
+                    </div>
+                </Container>
+            </section>
+            {/* Quotes Section */}
+            <section className="py-20 bg-[#f3f2e1]">
+                <Container>
+                    <h2 className="text-3xl font-serif text-center mb-12 text-tolkien-primary">
+                        Тандамал цитаталар
+                    </h2>
+
+                    <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-12">
+                        {[
+                            `“Адамдын ички дүйнөсү — бул чексиз аалам, аны изилдөө жашоонун мааниси.”`,
+                            `“Сөз адамдын жүрөгүн ачат жана руханий дүйнөсүн кеңейтет.”`,
+                            `“Жаратылыш менен үндөшүү — эң чоң чыгармачылык деми.”`,
+                            `“Ар бир сөздө руханий тереңдик бар, аны сезүүнү үйрөнүү керек.”`,
+                        ].map((quote, idx) => (
+                            <blockquote
+                                key={idx}
+                                className="p-8 bg-white-chalk rounded-2xl shadow-md italic text-[#4a4944]/90 font-serif relative before:content-['“'] before:text-6xl before:absolute before:-top-4 before:-left-4"
+                            >
+                                {quote}
+                            </blockquote>
+                        ))}
+                    </div>
+                </Container>
+            </section>
+
+            {/* Mini Photo Gallery Section */}
+            <section className="py-20 bg-white-chalk border-t border-[#dcd7c9]/60">
+                <Container>
+                    <h2 className="text-3xl font-serif text-center mb-12 text-tolkien-primary">
+                        Фотогалерея
+                    </h2>
+
+                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                        {[
+                            "/aman-tok-portrait.png",
+                            "/aman-tok-portrait.png",
+                            "/aman-tok-portrait.png",
+                            "/aman-tok-portrait.png",
+                        ].map((src, idx) => (
+                            <div key={idx} className="overflow-hidden rounded-xl shadow-sm hover:shadow-lg transition">
+                                <Image
+                                    src={src}
+                                    alt={`Фото ${idx + 1}`}
+                                    width={300}
+                                    height={300}
+                                    className="object-cover w-full h-full transform hover:scale-105 transition"
+                                />
+                            </div>
+                        ))}
+                    </div>
+
+                    <div className="text-center mt-8">
+                        <Link
+                            href="/photo"
+                            className="inline-block px-6 py-3 bg-tolkien-primary text-white rounded-xl hover:bg-tolkien-accent transition"
+                        >
+                            Баарын көрүү →
+                        </Link>
+                    </div>
+                </Container>
+            </section>
+
         </>
     );
 }
