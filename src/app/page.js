@@ -3,12 +3,13 @@
 import Image from "next/image";
 import Container from "@/components/Container";
 import Link from "next/link";
+import Section from "@/components/Section";
 
 export default function HomePage() {
     return (
         <>
-            <section
-                className="relative w-full h-[45vh] md:h-[55vh] lg:h-[60vh] flex items-center justify-center overflow-hidden">
+            <Section fullScreen={true}>
+                {/*className="relative w-full h-[45vh] md:h-[55vh] lg:h-[60vh] flex items-center justify-center overflow-hidden">*/}
                 <Image
                     src="/aman-tok-portrait-wide.png"
                     alt="Аман Токтогулов"
@@ -20,18 +21,30 @@ export default function HomePage() {
                 <div
                     className="absolute inset-0 bg-gradient-to-b from-[#f3f2e1]/70 via-transparent to-[#f3f2e1]/80"></div>
 
-                <div className="relative z-10 w-full flex justify-end text-center px-50">
-                    <p className="w-[40vh] text-lg md:text-3xl text-white-chalk/80 font-serif italic whitespace-pre-line">
-                        {`«Өзүңдү изде!
-                    Сен кимсиң, бу дүйнөдө?
-                    Кеч эмес али дагы.
-                    Сен, досум, өзүңдү тап!
-                    Тойгузба сөзүң, менен.
-                    Көргөз иш, бер ибарат!»`}
+                <div className="relative z-10 w-full flex-col justify-end text-justify px-50 pt-30 text-white-chalk/80 italic">
+                    <p className="text-lg md:text-3xl ">
+                        «Өзүңдү изде!
+                    </p>
+                    <p className="text-lg md:text-3xl">
+                        Сен кимсиң, бу дүйнөдө?
+                    </p>
+                    <p className="text-lg md:text-3xl">
+                        Кеч эмес али дагы.
+                    </p>
+                    <p className="text-lg md:text-3xl">
+                        Сен, досум, өзүңдү тап!
+                    </p>
+                    <p className="text-lg md:text-3xl">
+                        Тойгузба сөзүң, менен.
+                    </p>
+                    <p className="text-lg md:text-3xl">
+                        Көргөз иш, бер ибарат!»
                     </p>
                 </div>
-            </section>
-            <section className="py-16 bg-[#f3f2e1]">
+            </Section>
+
+            <Section fullScreen={true}>
+            {/*<section className="py-16 bg-[#f3f2e1]">*/}
                 <Container>
                     <div className="grid md:grid-cols-2 gap-12 items-center">
                         <Image
@@ -57,8 +70,10 @@ export default function HomePage() {
                         </div>
                     </div>
                 </Container>
-            </section>
-            <section className="py-20 bg-white-chalk border-t border-[#dcd7c9]/60">
+            </Section>
+
+            <Section fullScreen={true}>
+            {/*<section className="py-20 bg-white-chalk border-t border-[#dcd7c9]/60">*/}
                 <Container>
                     <h2 className="text-3xl font-serif text-center mb-12 text-tolkien-primary">
                         Рубрикалар
@@ -84,7 +99,7 @@ export default function HomePage() {
                         ))}
                     </div>
                 </Container>
-            </section>
+            </Section>
             {/* Quotes Section */}
             <section className="py-20 bg-[#f3f2e1]">
                 <Container>

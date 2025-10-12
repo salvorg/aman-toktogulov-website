@@ -35,7 +35,6 @@ export default function Header() {
 
         window.addEventListener("scroll", handleScroll);
         return () => {
-            if (timeout) clearTimeout(timeout);
             window.removeEventListener("scroll", handleScroll);
         };
     }, []);
