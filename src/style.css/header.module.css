@@ -1,0 +1,96 @@
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    backdrop-filter: blur(4px);
+    background-color: var(--white-chalk, #fff);
+    border-bottom: 1px solid rgba(220, 215, 201, 0.6);
+}
+
+.headerSpacer {
+    background-color: var(--white-chalk);
+    padding: 0.5rem 0;
+}
+
+.headerInner {
+    background-color: #fff;
+    transition: all 0.3s ease;
+    padding: 0.75rem 0;
+}
+
+.titleWrapper {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    padding: 0 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.title {
+    color: var(--tolkien-primary, #6b4b3e);
+    font-weight: 500;
+    letter-spacing: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.titleLarge {
+    font-size: 3rem;
+    margin: 0 0 1rem;
+}
+
+.titleSmall {
+    font-size: 1.25rem;
+    margin: 0 0 0.25rem;
+}
+
+.subtitle {
+    color: rgba(74, 73, 68, 0.8);
+    font-style: italic;
+    margin: 0 0 0.5rem;
+    letter-spacing: 0.12em;
+    transition: all 0.3s ease;
+}
+
+.subtitleLarge {
+    font-size: 1.25rem;
+}
+
+.subtitleSmall {
+    font-size: 0.875rem;
+}
+
+.nav {
+    max-width: 72rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem;
+}
+
+.navList {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0.5rem 0;
+}
+
+.navListSecond {
+    border-top: 1px solid rgba(220, 215, 201, 0.6);
+}
+
+.navLink {
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-size: 0.75rem;
+    color: rgba(44, 42, 40, 0.7);
+    transition: color 0.2s ease;
+}
+
+.navLink:hover {
+    color: var(--tolkien-accent, #6b4b3e);
+}
+
+.navLinkActive {
+    color: #6b4b3e;
+}

@@ -1,8 +1,9 @@
 "use client";
+import styles from "../style.css/footer.module.css";
 
 export default function Footer() {
     return (
-        <footer className="border-t bg-tolkien-primary border-[#d4cbbd] mt-16 py-8 text-center text-sm text-white-chalk">
+        <footer className={styles.footer}>
             <p>© 2025 Аман Токтогулов адабий мурасы</p>
         </footer>
     );

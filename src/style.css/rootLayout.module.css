@@ -1,0 +1,14 @@
+.layoutBody {
+    background-color: var(--color-background);
+    color: var(--color-tolkien-primary);
+    font-family: var(--font-serif);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main {
+    flex-grow: 1;
+}

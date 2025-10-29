@@ -1,0 +1,29 @@
+:root {
+    margin: 0;
+
+    --background: #F7F7F1;
+    --foreground: #383E3C;
+
+    --white-chalk: #F7F7F1;
+    --tolkien-primary: #666666;
+    --tolkien-accent: #a1885f;
+    --gold: #9F8D60;
+    --font-sans: "PT Serif", serif;
+    --font-serif: "Garamond Premier Pro", serif;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: #0a0a0a;
+        --foreground: #ededed;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-serif);
+}

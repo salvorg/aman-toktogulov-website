@@ -1,7 +1,8 @@
+import "../style.css/globals.css";
 import {Geist, Geist_Mono} from "next/font/google";
-import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import styles from "../style.css/rootLayout.module.css"
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -18,15 +19,14 @@ export const metadata = {
     description: "Писатель, поэт, переводчик",
 };
 
-export default function RootLayout({children}) {
+
+export default function RootLayout({ children }) {
     return (
         <html lang="en">
-        <body
-            className="bg-tolkien-bg text-tolkien-primary font-serif antialiased flex flex-col min-h-screen"
-        >
-        <Header/>
-        <main className="flex-grow">{children}</main>
-        <Footer/>
+        <body className={styles.layoutBody}>
+        <Header />
+        <main className={styles.main}>{children}</main>
+        <Footer />
         </body>
         </html>
     );

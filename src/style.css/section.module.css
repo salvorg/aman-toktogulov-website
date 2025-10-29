@@ -1,0 +1,12 @@
+.section {
+    position: relative;
+    width: 100%;
+}
+
+.sectionFull {
+    min-height: calc(100vh - 230px);
+}
+
+.sectionDefault {
+    padding: 0 4rem;
+}
