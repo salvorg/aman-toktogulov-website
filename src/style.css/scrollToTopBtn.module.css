@@ -1,0 +1,73 @@
+/* ======================================= */
+/* АНИМАЦИЯ (Легкое "дыхание") */
+/* ======================================= */
+@keyframes breathing-pulse {
+    0%, 100% {
+        box-shadow: 0 0 0 0px var(--tolkien-accent); /* Начальное/конечное состояние */
+        transform: scale(1);
+    }
+    50% {
+        /* Небольшое изменение тени, чтобы создать эффект "пульсации" */
+        box-shadow: 0 0 0 3px rgba(161, 136, 95, 0.4);
+        transform: scale(1.05); /* Легкое увеличение */
+    }
+}
+
+
+/* ======================================= */
+/* КНОПКА SCROLL-TO-TOP */
+/* ======================================= */
+
+.scrollToTop {
+    /* Фиксированное позиционирование поверх всего */
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+
+    /* Размеры и форма */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid var(--tolkien-accent);
+
+    /* Дизайн */
+    background-color: var(--background); /* Используем цвет фона, чтобы была ненавязчивой */
+    color: var(--tolkien-accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    /* Визуальные эффекты */
+    transition: opacity 0.3s, transform 0.3s, background-color 0.3s, visibility 0.3s;
+
+    /* Наша дизайнерская анимация "дыхание" */
+    animation: breathing-pulse 3s infinite ease-in-out;
+}
+
+.scrollToTop:hover {
+    background-color: var(--tolkien-accent); /* Меняем цвет при наведении */
+    color: var(--background);
+    transform: translateY(-5px) scale(1.1); /* Легкое поднятие */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    animation: none; /* Останавливаем анимацию при наведении, чтобы не отвлекать */
+}
+
+/* Скрытие / Показ */
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+}
+
+.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
