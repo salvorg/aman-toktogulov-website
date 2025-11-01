@@ -4,18 +4,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import Container from "@/components/Container";
 import styles from "../style.css/header.module.css";
-
-const links = [
-    { href: "/", label: "Башкы бет" },
-    { href: "/omur-bayany", label: "Өмүр баяны" },
-    { href: "/yrlar", label: "Ырлар" },
-    { href: "/oy-pikirler", label: "Ой-пикирлер" },
-    { href: "/proza", label: "Проза" },
-    { href: "/publitsistika", label: "Публицистика" },
-    { href: "/kotormolor", label: "Котормолор" },
-    { href: "/video", label: "Видео" },
-    { href: "/eskeruulor", label: "Эскерүүлөр" },
-];
+import {PAGES_URLS} from "@/util/constants";
 
 export default function Header() {
     const pathname = usePathname();
@@ -26,7 +15,7 @@ export default function Header() {
             const y = window.scrollY;
             setIsScrolled((prev) => {
                 if (!prev && y > 120) return true;
-                if (prev && y < 80) return false;
+                if (prev && y === 0) return false;
                 return prev;
             });
         };
@@ -35,12 +24,12 @@ export default function Header() {
     }, []);
 
     const renderLinks = (row) =>
-        row.map(({ href, label }) => (
-            <li key={href}>
+        row.map(({ path, label }) => (
+            <li key={path}>
                 <Link
-                    href={href}
+                    href={path}
                     className={`${styles.navLink} ${
-                        pathname === href ? styles.navLinkActive : ""
+                        pathname === path ? styles.navLinkActive : ""
                     }`}
                 >
                     {label}
@@ -48,8 +37,10 @@ export default function Header() {
             </li>
         ));
 
-    const firstRow = links.slice(0, 5);
-    const secondRow = links.slice(5);
+    const pathsArray = Object.values(PAGES_URLS);
+    const middle = Math.ceil(pathsArray.length / 2);
+    const firstRow = pathsArray.slice(0, middle);
+    const secondRow = pathsArray.slice(middle);
 
     return (
         <header className={styles.header}>

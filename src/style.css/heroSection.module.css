@@ -1,0 +1,46 @@
+.hero {
+    position: relative;
+    width: 100%;
+    height: calc(100dvh - var(--header-height));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.heroImage {
+    object-fit: cover;
+}
+
+.heroOverlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+            to bottom,
+            rgba(243, 242, 225, 0.7),
+            transparent,
+            rgba(243, 242, 225, 0.8)
+    );
+}
+
+.heroTextWrapper {
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: rgba(247, 247, 241, 0.8);
+    font-style: italic;
+    margin-left: 45%;
+}
+
+.heroTextWrapper p {
+    font-size: 2rem;
+}
+
+
+
+@media (min-width: 768px) {
+    .heroText p {
+        font-size: 1.875rem;
+    }
+}

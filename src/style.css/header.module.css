@@ -2,6 +2,7 @@
     position: sticky;
     top: 0;
     z-index: 50;
+    max-height: var(--header-height);
     backdrop-filter: blur(4px);
     background-color: var(--white-chalk, #fff);
     border-bottom: 1px solid rgba(220, 215, 201, 0.6);
@@ -27,7 +28,7 @@
 }
 
 .title {
-    color: var(--tolkien-primary, #6b4b3e);
+    color: var(--dark-grey, #6b4b3e);
     font-weight: 500;
     letter-spacing: 0.5rem;
     transition: all 0.3s ease;
@@ -46,7 +47,6 @@
 .subtitle {
     color: rgba(74, 73, 68, 0.8);
     font-style: italic;
-    margin: 0 0 0.5rem;
     letter-spacing: 0.12em;
     transition: all 0.3s ease;
 }
@@ -73,6 +73,7 @@
     justify-content: center;
     gap: 2rem;
     padding: 0.5rem 0;
+    list-style-type: none;
 }
 
 .navListSecond {
@@ -80,6 +81,7 @@
 }
 
 .navLink {
+    text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 0.15em;
     font-size: 0.75rem;

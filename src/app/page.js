@@ -4,32 +4,22 @@ import Image from "next/image";
 import Container from "@/components/Container";
 import Link from "next/link";
 import Section from "@/components/Section";
+import FeatureSection from "@/components/FeatureSection";
 import styles from "../style.css/homePage.module.css";
+import {sectionsData} from "@/util/mokData";
+import {PAGES_URLS} from "@/util/constants";
+import HeroSection from "@/components/sections/HeroSection";
 
 export default function HomePage() {
     return (
         <>
-            <Section fullScreen={true}>
-                <div className={styles.hero}>
-                    <Image
-                        src="/aman-tok-portrait-wide.png"
-                        alt="Аман Токтогулов"
-                        fill
-                        priority
-                        className={styles.heroImage}
-                    />
-                    <div className={styles.heroOverlay}></div>
+            <HeroSection />
 
-                    <div className={styles.heroText}>
-                        <p>«Өзүңдү изде!</p>
-                        <p>Сен кимсиң, бу дүйнөдө?</p>
-                        <p>Кеч эмес али дагы.</p>
-                        <p>Сен, досум, өзүңдү тап!</p>
-                        <p>Тойгузба сөзүң, менен.</p>
-                        <p>Көргөз иш, бер ибарат!»</p>
-                    </div>
-                </div>
-            </Section>
+            <Container>
+                {sectionsData.map((item, i) =>
+                    <FeatureSection key={item.title} data={item} index={(i + 1)} />
+                )}
+            </Container>
 
             <Section fullScreen={true}>
                 <Container>
@@ -66,7 +56,7 @@ export default function HomePage() {
                             { href: "/publitsistika", title: "Публицистика", desc: "Коом жана маданият тууралуу ой-пикирлер." },
                             { href: "/kotormolor", title: "Котормолор", desc: "Дүйнөлүк адабияттан которулган чыгармалар." },
                             { href: "/video", title: "Видео", desc: "Жандуу сүйлөмдөр жана маектер." },
-                            { href: "/photo", title: "Фотогалерея", desc: "Жашоодон, чыгармачылыктан элестер." },
+                            { href: "/gallery", title: "Фотогалерея", desc: "Жашоодон, чыгармачылыктан элестер." },
                         ].map(({ href, title, desc }) => (
                             <Link key={href} href={href} className={styles.categoryCard}>
                                 <h3>{title}</h3>
@@ -116,7 +106,7 @@ export default function HomePage() {
                     </div>
 
                     <div className="text-center">
-                        <Link href="/photo" className={styles.galleryButton}>
+                        <Link href={PAGES_URLS.gallery.path} className={styles.galleryButton}>
                             Баарын көрүү →
                         </Link>
                     </div>

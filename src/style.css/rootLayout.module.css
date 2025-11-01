@@ -1,7 +1,6 @@
 .layoutBody {
-    background-color: var(--color-background);
-    color: var(--color-tolkien-primary);
-    font-family: var(--font-serif);
+    background-color: var(--background);
+    color: var(--tolkien-primary);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     display: flex;

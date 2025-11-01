@@ -4,12 +4,15 @@
     --background: #F7F7F1;
     --foreground: #383E3C;
 
+    --dark-grey: #333333;
     --white-chalk: #F7F7F1;
     --tolkien-primary: #666666;
     --tolkien-accent: #a1885f;
     --gold: #9F8D60;
     --font-sans: "PT Serif", serif;
     --font-serif: "Garamond Premier Pro", serif;
+
+    --header-height: 204px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -26,4 +29,42 @@ body {
     background: var(--background);
     color: var(--foreground);
     font-family: var(--font-serif);
+}
+
+h1, h2, h3, h4, h5, h6, p, pre, blockquote, figure, hr {
+    margin: 0;
+}
+
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+body ul,
+body p {
+    margin: 0;
+    padding: 0;
+}
+
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+img, svg, video, canvas, audio, iframe, embed, object {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+button, [role="button"] {
+    background-color: transparent;
+    background-image: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+input {
+    line-height: inherit;
+    padding: 0;
 }

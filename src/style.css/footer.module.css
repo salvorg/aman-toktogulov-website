@@ -1,10 +1,10 @@
 .footer {
     border-top: 1px solid #d4cbbd;
-    background-color: var(--color-tolkien-primary);
+    background-color: var(--tolkien-primary);
     margin-top: 4rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
     text-align: center;
     font-size: 0.875rem;
-    color: var(--color-white-chalk);
+    color: var(--white-chalk);
 }
