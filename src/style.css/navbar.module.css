@@ -1,0 +1,115 @@
+.nav {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem;
+}
+
+.navList {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0.5rem 0;
+    list-style-type: none;
+}
+
+.navListSecond {
+    border-top: 1px solid rgba(220, 215, 201, 0.6);
+}
+
+.navLink {
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-size: 0.75rem;
+    color: rgba(44, 42, 40, 0.7);
+    transition: color 0.2s ease;
+}
+
+.navLink:hover {
+    color: var(--tolkien-accent, #6b4b3e);
+}
+
+.navLinkActive {
+    color: #6b4b3e;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        display: flex;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+        justify-content: flex-end;
+    }
+
+    .navListSecond {
+        border: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .burgerButton {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 30px;
+        height: 25px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        z-index: 1000;
+    }
+
+    .burgerIcon {
+        display: block;
+        width: 100%;
+        height: 3px;
+        background: var(--dark-grey);
+        border-radius: 10px;
+        transition: all 0.3s linear;
+        transform-origin: 1px;
+    }
+
+    .burgerOpen .burgerIcon:nth-child(1) {
+        transform: rotate(45deg);
+    }
+    .burgerOpen .burgerIcon:nth-child(2) {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    .burgerOpen .burgerIcon:nth-child(3) {
+        transform: rotate(-45deg);
+    }
+
+    .mobileMenu {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--background);
+        z-index: 999;
+        padding-top: 80px;
+        overflow-y: auto;
+    }
+
+    .mobileNavList {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+    }
+
+    .mobileNavList li {
+        margin: 10px 0;
+    }
+
+    .navLinkMobile {
+        font-size: 1.5rem;
+        padding: 10px 20px;
+    }
+}

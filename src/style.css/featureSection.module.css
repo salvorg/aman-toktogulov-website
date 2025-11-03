@@ -45,7 +45,6 @@
     background-color: transparent;
     color: var(--tolkien-accent);
     border: 1px solid var(--tolkien-accent);
-    cursor: pointer;
     align-self: center;
     text-transform: uppercase;
 }

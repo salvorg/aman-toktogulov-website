@@ -1,7 +1,7 @@
 "use client";
 
 import Container from "./Container";
-import styles from "../style.css/section.module.css";
+import styles from "@/style.css/section.module.css";
 
 export default function Section({ children, className = "", fullScreen = false }) {
     const sectionClass = `

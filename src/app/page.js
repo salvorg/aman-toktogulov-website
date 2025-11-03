@@ -5,10 +5,11 @@ import Container from "@/components/Container";
 import Link from "next/link";
 import Section from "@/components/Section";
 import FeatureSection from "@/components/FeatureSection";
-import styles from "../style.css/homePage.module.css";
+import styles from "@/style.css/homePage.module.css";
 import {sectionsData} from "@/util/mokData";
 import {PAGES_URLS} from "@/util/constants";
 import HeroSection from "@/components/sections/HeroSection";
+import ScrollToTopButton from "@/components/buttons/ScrollToTopBtn";
 
 export default function HomePage() {
     return (
@@ -112,6 +113,8 @@ export default function HomePage() {
                     </div>
                 </Container>
             </section>
+
+            <ScrollToTopButton />
         </>
     );
 }

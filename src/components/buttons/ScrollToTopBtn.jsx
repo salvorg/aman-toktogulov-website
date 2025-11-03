@@ -1,9 +1,8 @@
 "use client";
 
 import { useEffect, useState, useCallback } from "react";
-import styles from "./ScrollToTopButton.module.css";
+import styles from "@/style.css/scrollToTopBtn.module.css";
 
-// SVG-иконка стрелки
 const ChevronUpIcon = (props) => (
     <svg
         {...props}
@@ -22,7 +21,6 @@ const ChevronUpIcon = (props) => (
 export default function ScrollToTopButton() {
     const [isVisible, setIsVisible] = useState(false);
 
-    // Функция для плавного скролла наверх
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,
@@ -30,9 +28,7 @@ export default function ScrollToTopButton() {
         });
     };
 
-    // Обработчик скролла: показываем/скрываем кнопку
     const handleScroll = useCallback(() => {
-        // Показываем кнопку, если прокрутка превышает 300px
         if (window.scrollY > 300) {
             setIsVisible(true);
         } else {

@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import styles from "../style.css/featureSection.module.css"
+import styles from "@/style.css/featureSection.module.css"
 import Image from "next/image";
 
 const FeatureSection = ({ data, index }) => {

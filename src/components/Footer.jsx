@@ -1,5 +1,5 @@
 "use client";
-import styles from "../style.css/footer.module.css";
+import styles from "@/style.css/footer.module.css";
 
 export default function Footer() {
     return (

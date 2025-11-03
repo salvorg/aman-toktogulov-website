@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import Section from "../../components/Section";
+import Section from "@/components/Section";
 import Image from "next/image";
 import styles from "@/style.css/heroSection.module.css";
 
