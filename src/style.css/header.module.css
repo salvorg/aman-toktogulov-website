@@ -56,5 +56,33 @@
 }
 
 .subtitleSmall {
-    font-size: 0.875rem;
+    font-size: 0.75rem;
+}
+
+@media (max-width: 768px) {
+    .titleLarge {
+        font-size: 1.5rem;
+        margin: 0 0 0.5rem;
+    }
+
+    .titleSmall {
+        font-size: 0.75rem;
+        margin: 0 0 0.5rem;
+    }
+
+    .subtitleLarge {
+        font-size: 0.75rem;
+    }
+
+    .subtitleSmall {
+        font-size: 0.5rem;
+    }
+
+    .headerSpacer {
+        padding: 0.3rem 0;
+    }
+
+    .headerInner {
+        padding: 0.5rem 0;
+    }
 }
