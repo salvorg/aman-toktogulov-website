@@ -4,7 +4,7 @@
 }
 
 .sectionFull {
-    min-height: calc(100vh - 230px);
+    max-height: calc(100dvh);
 }
 
 .sectionDefault {

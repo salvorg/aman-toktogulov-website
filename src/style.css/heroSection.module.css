@@ -38,9 +38,18 @@
 }
 
 
+@media (max-width: 768px) {
+    .hero {
+        height: calc(50dvh - var(--header-height));
+    }
 
-@media (min-width: 768px) {
-    .heroText p {
-        font-size: 1.875rem;
+
+    .heroTextWrapper {
+        align-self: end;
+        justify-content: flex-end;
+    }
+
+    .heroTextWrapper p {
+        font-size: 1.25rem;
     }
 }

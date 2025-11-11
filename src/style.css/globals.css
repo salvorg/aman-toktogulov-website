@@ -68,3 +68,9 @@ input {
     line-height: inherit;
     padding: 0;
 }
+
+@media (max-width: 768px) {
+    :root {
+        --header-height: 101px;
+    }
+}
