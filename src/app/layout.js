@@ -17,6 +17,7 @@ const geistMono = Geist_Mono({
 export const metadata = {
     title: "Аман Токтогулов",
     description: "Писатель, поэт, переводчик",
+    viewport: 'width=device-width, initial-scale=1, viewport-fit=cover',
 };
 
 
